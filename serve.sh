@@ -10,4 +10,4 @@ trap "popd > /dev/null" EXIT SIGHUP SIGINT SIGTERM
 
 # https://webpack.github.io/docs/hot-module-replacement-with-webpack.html
 
-webpack-dev-server ./index.jsx --hot --inline --module-bind "css=style\!css"
+webpack-dev-server ./index.jsx --hot --inline --module-bind "css=inline-css\!css"

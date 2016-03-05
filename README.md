@@ -18,3 +18,7 @@ I don't mind the "Flash of Unstyled Content". _Yet_. Philosophy for now is: pres
 ### CSS reset
 
 I've always wanted an excuse to use Matthew Blode's [Marx CSS](https://github.com/mblode/marx) stylesheet. So here we go.
+
+## Development
+
+Playing with Webpack's [Hot Module replacement](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html) so I can see changes live in my browser without changing application, or hitting refresh.
