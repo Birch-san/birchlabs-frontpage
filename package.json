@@ -23,7 +23,7 @@
     "webpack-dev-server": "^2.0.0-beta"
   },
   "scripts": {
-    "start": "webpack-dev-server --progress --hot --inline --module-bind \"css=style\\!css\"",
+    "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback --progress --hot --inline --module-bind \"css=style\\!css\"",
     "pack": "webpack -p --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js production"
