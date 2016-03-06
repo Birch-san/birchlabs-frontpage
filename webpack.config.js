@@ -69,10 +69,10 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loaders: ['react-hot', `babel?${JSON.stringify({
-          presets: ['react', 'es2015-native-modules'],
-          cacheDirectory: 'cache'
-        })}`]
+        loader: 'babel',
+        query: {
+          "cacheDirectory": "cache"
+        }
       }
     ]
   }
