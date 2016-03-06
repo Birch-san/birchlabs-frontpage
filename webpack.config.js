@@ -7,6 +7,8 @@ const isProd = nodeEnv === 'production';
 // const path = require('path');
 // const webpack = require('webpack');
 
+
+
 module.exports = {
   devtool: isProd ? 'hidden-source-map' : 'cheap-eval-source-map',
   context: path.join(__dirname, './client'),
@@ -44,8 +46,8 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: './client',
-    hot: true
+    contentBase: './client'
+    // hot: true
   },
 
   module: {
@@ -67,10 +69,10 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel', // 'babel-loader' is also a legal name to reference
-        query: {
-          presets: ['react', 'es2015-native-modules']
-        }
+        loaders: ['react-hot', `babel?${JSON.stringify({
+          presets: ['react', 'es2015-native-modules'],
+          cacheDirectory: 'cache'
+        })}`]
       }
     ]
   }

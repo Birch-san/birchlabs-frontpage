@@ -18,12 +18,13 @@
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
+    "react-hot-loader": "^2.0.0-alpha-4",
     "style-loader": "^0.13.0",
     "webpack": "^2.1.0-beta.4",
     "webpack-dev-server": "^2.0.0-beta"
   },
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback --progress --hot --inline --module-bind \"css=style\\!css\"",
+    "start": "./node_modules/.bin/webpack-dev-server --port 3000 --history-api-fallback --progress --hot --inline --module-bind \"css=style\\!css\"",
     "pack": "webpack -p --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js production"
