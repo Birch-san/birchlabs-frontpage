@@ -11,16 +11,6 @@
 
 <body>
 <p>Yo</p>
-<script>
-// Google PageSpeed non-blocking, post-initial-paint css loader https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery#example
-// I shortened it for fun, and also added support for an array of stylesheets
-// (requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame || window.addEventListener.bind(null, 'load'))(function() {
-//   ["https://cdn.rawgit.com/mblode/marx/master/css/marx.min.css"].forEach(function(s) {
-//     var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = s;
-//     var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-//   });
-// });
-</script>
     <div id="root">If you see this then something is wrong.</div>
     <script src="./vendor.bundle.js"></script>
     <script src="./bundle.js"></script>
