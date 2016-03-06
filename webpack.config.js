@@ -20,8 +20,8 @@ module.exports = {
     path: path.join(__dirname, './static'),
     filename: 'bundle.js'
   },
-  // devtool: 'source-map',
-  devtool: 'eval',
+  devtool: 'source-map',
+  // devtool: 'eval',
     plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
