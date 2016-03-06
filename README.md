@@ -1,6 +1,8 @@
 # birchlabs-frontpage
 Frontpage of the Birchlabs website
 
+*NOTE: this attempt failed (see the postmorterm below), and I have started again in a [new repository](https://github.com/Birch-san/birchlabs-frontpage-2).*
+
 ## Goals
 Intention is to optimize frontpage for search engines.
 
