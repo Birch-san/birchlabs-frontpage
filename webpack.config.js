@@ -34,13 +34,47 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        warnings: false
+        warnings: false,
+        properties: true,
+        sequences: true,
+        dead_code: true,
+        conditionals: true,
+        comparisons: true,
+        evaluate: true,
+        booleans: true,
+        unused: true,
+        loops: true,
+        hoist_funs: true,
+        cascade: true,
+        if_return: true,
+        join_vars: true,
+        //drop_console: true,
+        drop_debugger: true,
+        unsafe: true,
+        hoist_vars: true,
+        negate_iife: true,
+        //side_effects: true
       },
       output: {
-        comments: false
+        space_colon: false,
+        comments: function(node, comment) {
+            var text = comment.value;
+            var type = comment.type;
+            if (type == "comment2") {
+                // multiline comment
+                return /@copyright/i.test(text);
+            }
+        }
       },
-      sourceMap: false
+      sourceMap: false,
+      mangle: {
+        toplevel: true,
+        sort: true,
+        eval: true,
+        properties: true
+      }
     }),
+    new webpack.optimize.DedupePlugin(),
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }
     })
