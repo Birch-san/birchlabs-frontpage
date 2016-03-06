@@ -22,3 +22,9 @@ I've always wanted an excuse to use Matthew Blode's [Marx CSS](https://github.co
 ## Development
 
 Playing with Webpack's [Hot Module replacement](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html) so I can see changes live in my browser without changing application, or hitting refresh.
+
+## References
+
+- [Optimizing Webpack Production Build for React + ES6 Apps](https://medium.com/modus-create-front-end-development/optimizing-webpack-production-build-for-react-es6-apps-a637e5692aea#.klbavykoc)
+- [Hot Module replacement with Webpack](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html)
+- [Google PageSpeed - Optimize CSS delivery](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery#example)
