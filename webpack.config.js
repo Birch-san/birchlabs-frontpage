@@ -44,8 +44,8 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: './client'
-    // hot: true
+    contentBase: './client',
+    hot: true
   },
 
   module: {
